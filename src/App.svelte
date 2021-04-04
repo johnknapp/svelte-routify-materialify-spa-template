@@ -1,6 +1,9 @@
 <script>
+  import { MaterialApp } from "svelte-materialify";
   import { Router } from "@roxi/routify";
   import { routes } from "../.routify/routes";
 </script>
 
-<Router {routes} />
+<MaterialApp>
+  <Router {routes} />
+</MaterialApp>
