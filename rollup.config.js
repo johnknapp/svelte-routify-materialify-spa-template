@@ -3,11 +3,16 @@ import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
+import { removeSync } from 'fs-extra'
 import css from 'rollup-plugin-css-only';
 
 const { preprocess } = require('./svelte.config')
 
 const production = !process.env.ROLLUP_WATCH;
+
+// remove and recreate buildDir on each build
+const buildDir = `public/modules`
+removeSync(buildDir)
 
 function serve() {
 	let server;
