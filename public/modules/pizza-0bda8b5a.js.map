@@ -1,1 +1,0 @@
-{"version":3,"file":"pizza-0bda8b5a.js","sources":["../../src/views/pizza.svelte"],"sourcesContent":["<script>\n  import {url} from '@roxi/routify'\n</script>\n\n<h1>i m pizza</h1>\n  \n<a href={$url('/')}>Go get index</a>"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;+CAMS,GAAI,IAAC,GAAG;;;;;;;;;;;;;uEAAR,GAAI,IAAC,GAAG;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;"}
