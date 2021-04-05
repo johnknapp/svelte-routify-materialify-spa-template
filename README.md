@@ -17,3 +17,5 @@ Setup notes:
   - hence: `npm i -D node-sass`
 - Following Materialify advanced install, continue to Materialify [Usage](https://svelte-materialify.vercel.app/getting-started/usage/) and follow the instructions
 - Within `App.svelte`, I wrapped routes within `<MaterialApp></MaterialApp>`
+- Made sure `public/index.html` has the proper css and js import statements
+- TODO: add [nollup](https://github.com/PepsRyuu/nollup) some day
