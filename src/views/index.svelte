@@ -7,4 +7,4 @@
 
 <a href={$url('/pizza')}>Go for pizza</a>
 
-<Chip class="ma-2 primary-color">You can call me chip</Chip>
+<Chip class="ml-6 primary-color">You can call me chip</Chip>

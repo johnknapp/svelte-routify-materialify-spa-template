@@ -19,3 +19,8 @@ Setup notes:
 - Within `App.svelte`, I wrapped routes within `<MaterialApp></MaterialApp>`
 - Made sure `public/index.html` has the proper css and js import statements
 - TODO: add [nollup](https://github.com/PepsRyuu/nollup) some day
+- Frequent problems exist with materialify theme overrides and the docs are weak. What it takes:
+  1. Make sure your `svelte.config.js` preprocess includePaths match the location of `_material_theme.scss`
+  1. Make sure your `rollup.config.js` properly imports the preprocess from `svelte.config.js`
+  1. Do not rename `_material_theme.scss` (materialify is hard coded to that name!)
+  1. Custom overrides must import from  svelte-materialify/src` which is not compiled.
